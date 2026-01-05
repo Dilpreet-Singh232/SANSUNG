@@ -1,3 +1,11 @@
+@font-face {
+  font-family: SANSUNG;
+  src: url(./SamsungOne-400.woff2);
+
+}
+@font-face {
+  font-family: SANSUNG1;
+  src: url(./SamsungOne-700.woff2);}
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +18,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  
   height:100%;
   width:100%;
 }
@@ -18,8 +26,102 @@ body {
 
 a {
   text-decoration: none;
-}
+  color: black;
+  transition: transform 0.3s ease ;
 
+}
+a:hover {
+  transform: scale(1.2);
+}
 body{
   background-color: black;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+} 
+
+#nav1{
+  height: 100px;
+  width: 70%;
+  background-color: white;
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  gap: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+#nav2{
+  height: 100px;
+  width: 30%;
+  background-color: white;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 30px;
+  padding-right: 20px;
+  ;
+  padding-bottom: 15px;
+}
+#navbar{
+  display: flex;
+  font-family: SANSUNG;
+}
+
+
+img{
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+  
+  position: relative;
+  top: 100%;
+ 
+
+}
+i{
+  font-size: 24px;
+}
+
+#banner{
+  height: 540px;
+  width: 100%;
+  color: white;
+  background-image: url("new.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: SANSUNG;
+} 
+#h{
+ 
+  button{
+    margin-top: 400px;
+    margin-left: 1000PX;
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-family: SANSUNG;
+    border-color: black;
+  }
+  button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+  }
+}
+a i,a img{
+  display: inline-block;
+  transition: transform 0.3s ease;
+
+}
+
+a i:hover, a img:hover {
+  transform: scale(1.2);
 }
