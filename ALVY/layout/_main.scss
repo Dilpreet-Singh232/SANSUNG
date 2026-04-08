@@ -1,0 +1,15 @@
+@use 
+      './utils/_utils.scss';
+
+main{
+  box-sizing: border-box;
+            height: auto;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      background-color: var(--background-color);
+            overflow-y: auto;
+      overflow-x: auto;
+      font-family: var(--main-font);
+
+}

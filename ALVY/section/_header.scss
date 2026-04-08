@@ -1,0 +1,163 @@
+
+header{
+      height: 100vh;
+      width: 100%;
+            position: relative;
+}
+nav{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      
+
+h1{
+      font-size: 19px;
+      color: var(--font-color);
+      font-family: var(--main-font);
+      margin: var(--space-8) ;
+     margin-left: 20px;
+            }
+            .menu{
+                  display: flex;
+                  flex-direction: row;
+                 
+                  
+            }
+      button{
+            background-color: var(--secondary-color);
+            font-weight: 600;
+            padding: 16px 29px;
+            border-radius: 10px;
+            margin: 20px;
+            margin-left: var(--space-4);
+            margin-right: 0px;
+            white-space: nowrap;      /* Prevents text from wrapping to a second line */
+  overflow: hidden;         /* Ensures text doesn't spill out if the button has a fixed width */
+  text-overflow: ellipsis;
+  border: none;
+           
+      }
+      i{
+            background-color: var(--primary-color);
+            color: var(--font-color);
+           margin: 20px 10px;
+           padding: 16px;
+            border-radius: 10px;
+      }
+}
+
+.overlay{
+     
+      //width: 100%;
+      height: 100%;
+     background-image:  
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./section/img1.webp");
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+     margin: var(--space-2) var(--space-2) ;
+    padding: 0 var(--space-8);
+      .content{
+            color: var(--font-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 70%;
+            h1{
+             font-size: clamp(2.5rem, 8vw, 4rem);
+                  letter-spacing: 2px;
+                  line-height: 1.1;
+                  margin-bottom: 20px;
+                  font-weight: 500;
+                  
+            }
+            p{
+                 font-size: clamp(1.25rem, 4vw, 1.25rem);
+                  line-height: 1.5;
+            }
+      }
+}
+.cards{
+    
+     
+      border-radius: 20px;
+      background-color: var(--background-color);
+      color: var(--font-color);
+                  border-radius: 20px;
+                  a{
+                        text-decoration-line: none;
+                        text-transform: uppercase;
+                        color: var(--font-color);
+                  }
+}
+.card1{
+       display: flex;
+            flex-direction: column;
+       margin: 10px var(--space-2 );
+        padding: var(--space-8) var(--space-4);
+        gap: 30px;
+        background-color: var(--primary-color);
+        border-radius: 20px;
+}
+.card2{
+       display: flex;
+            flex-direction: column;
+       margin: 10px var(--space-2 );
+        padding: var(--space-8) var(--space-4);
+        gap: 30px;
+            background-color: var(--primary-color);
+            border-radius: 20px;
+}
+
+.card3{
+       display: flex;
+            flex-direction: column;
+       margin: 10px var(--space-2 );
+        padding: var(--space-8) var(--space-4);
+        gap: 30px;
+            background-color: var(--primary-color);
+            border-radius: 20px;
+
+}
+.card4
+{
+       display: flex;
+      flex-direction: column;
+       margin: 10px var(--space-2 );
+        padding: var(--space-8) var(--space-4);
+        gap: 30px;
+            background-color: var(--primary-color);
+            border-radius: 20px;
+}
+
+.logo-slider{
+      width: calc(250*4);
+       height: auto;
+      display: flex;
+      flex-direction: row;
+      gap: var(--space-4);
+      align-items: center;
+      margin: var(--space-8) var(--space-2);
+      overflow: hidden;
+      white-space: nowrap;
+  .logo-tracker {
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    animation: seamless-scroll 15s linear infinite;
+  }
+ 
+@keyframes seamless-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translate(-33.33%); }
+}
+  img {
+    width: 120px;
+    height: auto;
+    background-color: white; // gives that box look
+    padding: 0px;           // spacing inside box
+    border: none;      // optional nice UI
+  }
+}
